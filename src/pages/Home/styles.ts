@@ -1,13 +1,21 @@
 import styled from 'styled-components'
-import introBackground from '../../assets/intro-bg.svg'
+import introBackground from '../../assets/intro-bg.png'
+
+export const Main = styled.main`
+  background: url(${introBackground}) no-repeat center;
+  width: 100%;
+  height: 34rem;
+  display: flex;
+  align-items: center;
+`
 
 export const HomeContainer = styled.div`
   display: flex;
   justify-content: space-between;
-  //max-width: 70rem;
+  max-width: 70rem;
   width: 100%;
+  margin: 0 auto;
   align-items: center;
-  background: url(${introBackground}) no-repeat center;
 `
 export const IntroText = styled.div`
   display: flex;
@@ -16,7 +24,6 @@ export const IntroText = styled.div`
   justify-content: center;
   width: 100%;
   max-width: 37rem;
-  margin: 0 auto;
 
   h1 {
     font-family: 'Baloo 2', cursive;
@@ -35,7 +42,7 @@ export const IntroText = styled.div`
   }
 
   div {
-    margin: 3rem 0;
+    margin-top: 4.125rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
     row-gap: 1.25rem;
