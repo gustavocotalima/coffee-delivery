@@ -1,10 +1,11 @@
 import {
-  ButtonsContainer,
   CoffeeCardContainer,
   FooterContainer,
+  Form,
   Tag,
   TagList,
 } from './styles'
+import { QtyInput } from '../QtyInput'
 import coffeeImage from '../../assets/coffees/Type=Expresso.png'
 import { ShoppingCartSimple } from 'phosphor-react'
 
@@ -23,12 +24,12 @@ export function CoffeeCard() {
         <a>
           R$ <span>9,99</span>
         </a>
-        <ButtonsContainer>
-          <a>-1+</a>
+        <Form>
+          <QtyInput />
           <button type="button">
             <ShoppingCartSimple size={20} weight="fill" />
           </button>
-        </ButtonsContainer>
+        </Form>
       </FooterContainer>
     </CoffeeCardContainer>
   )

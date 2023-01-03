@@ -1,7 +1,14 @@
+import { CartContainer, DataContainer, Main } from './styles'
+
 export function Cart() {
   return (
-    <div>
-      <h1>Cart</h1>
-    </div>
+    <Main>
+      <DataContainer>
+        <h1>Complete seu pedido</h1>
+      </DataContainer>
+      <CartContainer>
+        <h1>Cafés selecionados</h1>
+      </CartContainer>
+    </Main>
   )
 }
