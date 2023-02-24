@@ -6,7 +6,7 @@ import {
   TagList,
 } from './styles'
 import { QtyInput } from '../QtyInput'
-import coffeeImage from '../../assets/coffees/Type=Expresso.png'
+import coffeeImage from '../../assets/coffees/Expresso Tradicional.png'
 import { ShoppingCartSimple } from 'phosphor-react'
 
 export function CoffeeCard() {
@@ -15,7 +15,6 @@ export function CoffeeCard() {
       <img src={coffeeImage} alt="Café expresso" />
       <TagList>
         <Tag>TRADICIONAL</Tag>
-        <Tag>QUENTE</Tag>
         <Tag>COM LEITE</Tag>
       </TagList>
       <h1>Expresso Tradicional</h1>

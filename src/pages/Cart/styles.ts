@@ -26,6 +26,12 @@ export const DataContainer = styled.div`
   align-items: flex-start;
   gap: 0.75rem;
 `
+export const AdressContainer = styled.div`
+  width: 100%;
+`
+
+export const PaymentContainer = styled.div``
+
 export const CartContainer = styled.div`
   width: 100%;
   max-width: 28rem;
