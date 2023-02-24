@@ -4,6 +4,7 @@ import {
   Form,
   Tag,
   TagList,
+  SubmitButton,
 } from './styles'
 import { QtyInput } from '../QtyInput'
 import coffeeImage from '../../assets/coffees/Expresso Tradicional.png'
@@ -25,9 +26,9 @@ export function CoffeeCard() {
         </a>
         <Form>
           <QtyInput />
-          <button type="button">
+          <SubmitButton>
             <ShoppingCartSimple size={20} weight="fill" />
-          </button>
+          </SubmitButton>
         </Form>
       </FooterContainer>
     </CoffeeCardContainer>

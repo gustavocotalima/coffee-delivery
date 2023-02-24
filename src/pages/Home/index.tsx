@@ -1,7 +1,7 @@
 import { Coffee, Package, ShoppingCart, Timer } from 'phosphor-react'
 import { useTheme } from 'styled-components'
 import homeImage from '../../assets/coffee-home-image.png'
-import { CoffeeCard } from '../../components/CoffeeCard'
+import { CoffeeList } from '../../components/CoffeeList'
 import { HomeContainer, IntroItem, IntroText, Main } from './styles'
 
 export function Home() {
@@ -50,7 +50,7 @@ export function Home() {
             alt="Imagem de um copo de café com a marca Coffee Delivery com alguns tipos de café ao fundo"
           />
         </div>
-        <CoffeeCard />
+        <CoffeeList />
       </HomeContainer>
     </Main>
   )

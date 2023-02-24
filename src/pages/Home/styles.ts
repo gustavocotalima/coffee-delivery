@@ -6,15 +6,17 @@ export const Main = styled.main`
   width: 100%;
   height: 34rem;
   display: flex;
+  margin: 0;
   align-items: center;
 `
 
 export const HomeContainer = styled.div`
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   max-width: 70rem;
   width: 100%;
-  margin: 0 auto;
+  margin: auto;
   align-items: center;
 `
 export const IntroText = styled.div`

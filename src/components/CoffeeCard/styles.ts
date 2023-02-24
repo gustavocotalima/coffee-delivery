@@ -92,16 +92,16 @@ export const Form = styled.form`
   align-items: center;
   justify-content: space-between;
   gap: 0.5rem;
+`
 
-  button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.5rem;
-    color: ${(props) => props.theme.color.white};
-    background: ${(props) => props.theme.color.purpleDark};
-    border: 0;
-    border-radius: 6px;
-    padding: 0.5rem;
-  }
+export const SubmitButton = styled.button`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  color: ${(props) => props.theme.color.white};
+  background: ${(props) => props.theme.color.purpleDark};
+  border: 0;
+  border-radius: 6px;
+  padding: 0.5rem;
 `
