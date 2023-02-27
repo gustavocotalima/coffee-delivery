@@ -7,22 +7,36 @@ import {
   SubmitButton,
 } from './styles'
 import { QtyInput } from '../QtyInput'
-import coffeeImage from '../../assets/coffees/Expresso Tradicional.png'
 import { ShoppingCartSimple } from 'phosphor-react'
 
-export function CoffeeCard() {
+interface coffeeProps {
+  name: string
+  price: number
+  tags: string[]
+  description: string
+  image: string
+}
+
+export function CoffeeCard({
+  description,
+  image,
+  name,
+  price,
+  tags,
+}: coffeeProps) {
   return (
     <CoffeeCardContainer>
-      <img src={coffeeImage} alt="Café expresso" />
+      <img src={'../../assets/coffees/' + image} />
       <TagList>
-        <Tag>TRADICIONAL</Tag>
-        <Tag>COM LEITE</Tag>
+        {tags.map((tag) => (
+          <Tag key={tag}>{tag.toUpperCase()}</Tag>
+        ))}
       </TagList>
-      <h1>Expresso Tradicional</h1>
-      <p>O tradicional café feito com água quente e grãos moídos</p>
+      <h1>{name}</h1>
+      <p>{description}</p>
       <FooterContainer>
         <a>
-          R$ <span>9,99</span>
+          R$ <span>{price}</span>
         </a>
         <Form>
           <QtyInput />
